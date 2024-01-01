@@ -8,7 +8,7 @@ using Volo.Abp.EventBus.Distributed;
 using Volo.Abp.Uow;
 
 namespace EShopOnAbp.CatalogService;
-
+//TODO：为什么这个处理器会出现在这里
 public class OrderHandler : IDistributedEventHandler<OrderAcceptedEto>, ITransientDependency
 {
     private readonly IRepository<Product, Guid> _productRepository;
